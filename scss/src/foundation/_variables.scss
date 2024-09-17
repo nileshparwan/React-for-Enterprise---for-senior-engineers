@@ -42,3 +42,29 @@ $white-dark: #f1f2f3;
 /* Utility Colors */
 $red: #d12727;
 $red-light: #f8dedf;
+
+
+/*=============================================
+=            TYPOGRAPHY                      =
+=============================================*/
+
+
+/**
+ *
+ * 1) The playfair font. We'll use this for heading mostly.
+ *    https://fonts.google.com/specimen/Playfair+Display
+ *
+ * 2) The raleway font. We'll use this for the body text
+ *    https://fonts.google.com/specimen/Raleway
+ */
+
+
+
+
+/* font Families */
+$playfair: "Playfair", serif; /* 1 */
+$raleway: "Raleway", "HelveticaNeue", "Helvitica", "Arial", sans-serif; /* 2 */
+
+
+
+
