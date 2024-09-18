@@ -15,4 +15,19 @@ $h4-font-size: var(--dse-h4-font-size, $h-4) !default;
 $h5-font-size: var(--dse-h5-font-size, $h-5) !default;
 $h6-font-size: var(--dse-h6-font-size, $h-6) !default;      
 
+/*=============================================
+=            Head font weights            =
+=============================================*/
+
+$h1-text-weight: var(--dse-h1-text-weight, $fw-black) !default;
+$h2-text-weight: var(--dse-h2-text-weight, $fw-semibold) !default;
+$h3-test-weight: var(--dse-h3-text-weight, $fw-bold) !default;
+$h4-text-weight: var(--dse-h4-text-weight, $fw-medium) !default;
+$h5-text-weight: var(--dse-h5-text-weight, $fw-normal) !default;
+$h6-text-weight: var(--dse-h6-text-weight, $fw-light) !default;
+
+
+/*=====  End of font weights  ======*/
+
+
 
