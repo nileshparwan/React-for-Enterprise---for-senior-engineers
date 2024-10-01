@@ -1,0 +1,13 @@
+{
+    "rules": {
+        "indentation": 4
+    },
+    "plugins": [
+        "stylelint-prettier"
+    ],
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-prettier-scss",
+        "stylelint-prettier/recommended"
+    ]
+}

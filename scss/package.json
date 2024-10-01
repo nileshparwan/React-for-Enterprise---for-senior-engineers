@@ -2,18 +2,30 @@
   "name": "@ds.e/scss",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint './**/*.scss'",
+    "lint:fix": "npm run lint --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
   "dependencies": {
-    "-": "^0.0.1",
-    "D": "^1.0.0",
     "normalize-scss": "^8.0.0"
   },
   "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "stylelint": "^16.9.0",
     "stylelint-config-prettier-scss": "^1.0.0",
