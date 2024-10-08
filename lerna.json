@@ -1,8 +1,13 @@
 {
-  "version": "independent",
   "packages": [
     "packages/**"
   ],
+  "version": "0.0.0",
   "npmClient": "yarn",
-  "stream": true
+  "stream": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    }
+  }
 }
