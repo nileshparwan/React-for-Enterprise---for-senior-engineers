@@ -8,16 +8,25 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/**"
+      "packages/**",
+      "playgrounds/**"
     ],
     "nohoist": [
       "**/normalize-scss"
     ]
   },
   "scripts": {
-    "build": "yarn lerna run build                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      "
+    "build": "yarn lerna run build",
+    "commit": "yarn git-cz"
   },
   "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "lerna": "^8.1.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

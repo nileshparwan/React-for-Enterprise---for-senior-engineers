@@ -7,7 +7,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint './**/*.scss'",
-    "lint:fix": "npm run lint --fix"
+    "lint:fix": "npm run lint --fix",
+    "build": "node src/scripts/build.js"
   },
   "husky": {
     "hooks": {
@@ -21,6 +22,7 @@
     ]
   },
   "dependencies": {
+    "node-sass": "^9.0.0",
     "normalize-scss": "^8.0.0"
   },
   "devDependencies": {
